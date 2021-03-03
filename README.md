@@ -1,25 +1,38 @@
 # Operating Systems Capstone 2021
 
-[中文](讀我.md)
-
 ## Author
 
 | Student ID | GitHub Account | Name | Email                      |
 | -----------| -------------- | ---- | -------------------------- |
 | 0856167    | Yunyung        | 許振揚| yungyung7654321@gmail.com  |
 
-## About this Repository
-* This is the repository for the labs in NCTU CS OSC(OSDI) Spring 2021 class.
-* We are going to design some important part in the OS implementation.
-* The hardware we use is **Raspberry Pi 3 Model B+**.
+## Files
+| File          | Content      | 
+| --------------| ------------ | 
+| linker.ld     | linker script|
+| a.S           | source code  |
 
-## How to Use This Repository
-* Lab instruction is in [here](https://grasslab.github.io/NYCU_Operating_System_Capstone/labs/lab0.html).
-* You can download different labs in branch and release.
-* [Here](https://hackmd.io/VD1WElEAQNGVpZx4mI9KXQ?both) are some references we use in each lab.
+## Prerequisite
+Follow [here](https://grasslab.github.io/NYCU_Operating_System_Capstone/labs/lab0.html) to install required target toolchain, and use them to buuld bootable image for rpi3.
 
-## Labs
-* **Lab 0: Environment Setup**
-    * [Branch]()
-* **Lab 1: Hello World**
-    * [Branch
+## How to build From Source Code to Kernel Image
+
+### From Source Code to Object Files
+```
+aarch64-linux-gnu-gcc -c a.S
+```
+
+### From Object Files to ELF
+```
+aarch64-linux-gnu-ld -T linker.ld -o kernel8.elf a.o
+```
+
+### From ELF to Kernel Image
+```
+aarch64-linux-gnu-objcopy -O binary kernel8.elf kernel8.img
+```
+
+## Run on QEMU
+```
+qemu-system-aarch64 -M raspi3 -kernel kernel8.img -display none -d in_asm
+```
