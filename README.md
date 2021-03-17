@@ -1,7 +1,5 @@
 # Operating Systems Capstone 2021
 
-[中文](讀我.md)
-
 ## Author
 
 | Student ID | GitHub Account | Name | Email                      |
