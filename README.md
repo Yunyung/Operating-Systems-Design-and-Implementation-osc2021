@@ -23,5 +23,5 @@
     * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-00)
 * **Lab 1: Hello World**
     * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-01)
-* **Lab 1: Hello World**
+* **Lab 2: Bootloader**
     * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-02)
