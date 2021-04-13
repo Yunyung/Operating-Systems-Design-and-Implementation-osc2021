@@ -25,3 +25,5 @@
     * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-02)
 * **Lab 3: Allocator**
 *   * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-03)
+* **Lab 4: Exception and Interrupt**
+*   * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-04)
