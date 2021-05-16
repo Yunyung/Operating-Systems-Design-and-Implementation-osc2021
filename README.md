@@ -24,6 +24,14 @@
 * **Lab 2: Bootloader**
     * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-02)
 * **Lab 3: Allocator**
-*   * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-03)
+    * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-03)
 * **Lab 4: Exception and Interrupt**
-*   * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-04)
+    * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-04)
+* **Lab 5: Thread and User Process**
+    * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-05)
+* **Lab 6: Virtual File System**
+    * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-06)
+* **Lab 7: File System Meets Hardware**
+    * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-07)
+* **Lab 8: Virtual Memory**
+    * [Branch](https://github.com/Yunyung/osc2021/tree/LAB-08)
